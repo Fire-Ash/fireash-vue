@@ -4,12 +4,11 @@
             <Nav />
         </div>
         <div class="col-span-2">
-<!--            <RouterView v-slot="{ Component }">-->
-<!--                <transition name="fade">-->
-<!--                    <component :is="Component" />-->
-<!--                </transition>-->
-<!--            </RouterView>-->
-            <RouterView />
+           <RouterView v-slot="{ Component }">
+               <transition name="fade">
+                   <component :is="Component" />
+               </transition>
+           </RouterView>
         </div>
         <BackToTop />
     </div>
@@ -30,5 +29,6 @@ import BackToTop from "@/components/BackToTop.vue";
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;
+    position: fixed;
 }
 </style>
