@@ -7,12 +7,10 @@ import NotFound from "@/views/NotFound.vue";
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
-        // not sure what to do with home view, will add it back later
         {
             path: "/",
-            redirect: "/about"
-            // name: "home",
-            // component: HomeView
+            name: "home",
+            component: HomeView
         },
         {
             path: "/about",

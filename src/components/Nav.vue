@@ -9,9 +9,9 @@
         </div>
         <div>
             <ul class="space-y-2">
-<!--                <li>-->
-<!--                    <NavLink path="/" name="Home" />-->
-<!--                </li>-->
+               <li>
+                   <NavLink path="/" name="Home" />
+               </li>
                 <li>
                     <NavLink path="/about" name="About Me" />
                 </li>
