@@ -6,7 +6,11 @@
             <p>I love to try to learn new things, whether that is a new framework, or even a new programming language. I'm currently attempting to learn a bit more JavaScript, along with frameworks for it, such as Vue and Nuxt. I'm also planning on possibly looking into learning React and Next.js in the future.</p>
         </div>
         <ul class="mt-14">
-            <li v-for="item in contact">{{ item.name }} - {{ item.info }}</li>
+            <li v-for="item in contact">
+                <a :href="item.link">
+                    {{ item.name }} - {{ item.info }}
+                </a>
+            </li>
         </ul>
     </div>
 </template>
@@ -19,11 +23,17 @@ export default {
             contact: [
                 {
                     name: 'Twitter',
-                    info: '@fire_ash_'
+                    info: '@fire_ash_',
+                    link: 'https://twitter.com/fire_ash_'
                 },
                 {
                     name: 'Discord',
                     info: 'ash <3#5553'
+                },
+                {
+                    name: 'Email',
+                    info: 'me@fireash.xyz',
+                    link: 'mailto:me@fireash.xyz'
                 }
             ]
         }
