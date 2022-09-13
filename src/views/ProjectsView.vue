@@ -27,7 +27,3 @@ export default {
     components: { ProjectInfo }
 };
 </script>
-
-<style scoped>
-
-</style>
