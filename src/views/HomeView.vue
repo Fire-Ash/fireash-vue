@@ -30,10 +30,6 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import SkillsList from "@/components/SkillsList.vue";
-
-export default {
-    components: { SkillsList }
-}
 </script>
