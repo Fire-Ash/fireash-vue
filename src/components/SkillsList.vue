@@ -9,14 +9,10 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: "SkillsList",
-    props: [ 'name', 'items' ],
-    data() {
-        return {
-            show: false
-        }
-    }
-}
+<script setup>
+import { ref } from "vue";
+
+const props = defineProps(['name', 'items']);
+
+const show = ref(false);
 </script>
