@@ -23,8 +23,13 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import NavLink from "@/components/NavLink.vue";
+
+export default {
+    name: "Nav",
+    components: { NavLink }
+};
 </script>
 
 <style scoped>

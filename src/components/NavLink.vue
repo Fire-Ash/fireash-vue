@@ -7,6 +7,12 @@
     </router-link>
 </template>
 
-<script setup>
-const props = defineProps(['name', 'path'])
+<script>
+export default {
+    name: "NavLink",
+    props: [
+        'name',
+        'path'
+    ]
+};
 </script>

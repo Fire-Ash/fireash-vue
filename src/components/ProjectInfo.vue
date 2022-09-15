@@ -19,6 +19,14 @@
     </div>
 </template>
 
-<script setup>
-const props = defineProps(['title', 'description', 'screenshot', 'links'])
+<script>
+export default {
+    name: "ProjectInfo",
+    props: [
+        'title',
+        'description',
+        'screenshot',
+        'links'
+    ]
+};
 </script>
