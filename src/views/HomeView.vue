@@ -25,7 +25,16 @@
                             ]"
                 />
             </div>
-            <p class="text-sm mt-3">! = learning</p>
+            <p class="text-sm mt-2">! = learning</p>
+        </div>
+        <div>
+            <p>my interests:</p>
+            <ul class="pl-10 space-y-1">
+                <li>programming, mainly in web and software development</li>
+                <li>making videos for youtube</li>
+                <li>making websites or working on small projects like this</li>
+                <li>open source software and its development</li>
+            </ul>
         </div>
     </div>
 </template>
