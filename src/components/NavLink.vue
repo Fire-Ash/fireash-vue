@@ -1,3 +1,7 @@
+<script setup>
+    const props = defineProps(['name', 'path'])
+</script>
+
 <template>
     <router-link :to="this.path"
                  class="btn w-full"
@@ -6,13 +10,3 @@
         {{ this.name }}
     </router-link>
 </template>
-
-<script>
-export default {
-    name: "NavLink",
-    props: [
-        'name',
-        'path'
-    ]
-};
-</script>

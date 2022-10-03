@@ -1,3 +1,7 @@
+<script setup>
+    import NavLink from '@/components/NavLink.vue'
+</script>
+
 <template>
     <div class="md:sticky md:top-20 space-y-2">
         <h1 class="text-4xl font-semibold">Hi, I'm Ash.</h1>
@@ -22,15 +26,6 @@
         </div>
     </div>
 </template>
-
-<script>
-import NavLink from "@/components/NavLink.vue";
-
-export default {
-    name: "Nav",
-    components: { NavLink }
-};
-</script>
 
 <style scoped>
 .nav-link {

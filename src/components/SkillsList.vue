@@ -1,3 +1,11 @@
+<script setup>
+    import { ref } from 'vue'
+    
+    const props = defineProps(['name', 'items'])
+    
+    const show = ref(false)
+</script>
+
 <template>
     <div>
         <button @click="show = !show">{{ this.name }} (click)</button>
@@ -8,15 +16,3 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    name: "SkillsList",
-    props: [ 'name', 'items' ],
-    data() {
-        return {
-            show: false
-        }
-    }
-}
-</script>

@@ -1,3 +1,9 @@
+<script setup>
+    import { RouterView } from 'vue-router'
+    import Nav from '@/components/Nav.vue'
+    import BackToTop from '@/components/BackToTop.vue'
+</script>
+
 <template>
     <div class="md:grid grid-cols-3 gap-20 w-10/12 max-w-6xl mx-auto mt-20 space-y-10 mb-10">
         <div class="col-span-1">
@@ -13,12 +19,6 @@
         <BackToTop />
     </div>
 </template>
-
-<script setup>
-import { RouterLink, RouterView } from "vue-router";
-import Nav from "@/components/Nav.vue";
-import BackToTop from "@/components/BackToTop.vue";
-</script>
 
 <style>
 .fade-enter-active,

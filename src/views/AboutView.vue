@@ -1,3 +1,22 @@
+<script setup>
+    const contact = [
+        {
+            name: 'Twitter',
+            info: '@fire_ash_',
+            link: 'https://twitter.com/fire_ash_'
+        },
+        {
+            name: 'Discord',
+            info: 'ash <3#5553'
+        },
+        {
+            name: 'Email',
+            info: 'me@fireash.xyz',
+            link: 'mailto:me@fireash.xyz'
+        }
+    ]
+</script>
+
 <template>
     <div>
         <div class="space-y-3">
@@ -14,22 +33,3 @@
         </ul>
     </div>
 </template>
-
-<script setup>
-const contact = [
-    {
-        name: 'Twitter',
-        info: '@fire_ash_',
-        link: 'https://twitter.com/fire_ash_'
-    },
-    {
-        name: 'Discord',
-        info: 'ash <3#5553'
-    },
-    {
-        name: 'Email',
-        info: 'me@fireash.xyz',
-        link: 'mailto:me@fireash.xyz'
-    }
-]
-</script>

@@ -1,3 +1,7 @@
+<script setup>
+    import SkillsList from '@/components/SkillsList.vue'
+</script>
+
 <template>
     <div class="space-y-3">
         <p>I'm Ash.</p>
@@ -38,7 +42,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import SkillsList from "@/components/SkillsList.vue";
-</script>

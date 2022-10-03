@@ -1,3 +1,7 @@
+<script setup>
+    const props = defineProps(['title', 'description', 'screenshot', 'links'])
+</script>
+
 <template>
     <div class="card bg-base-200">
         <div class="card-body">
@@ -18,15 +22,3 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    name: "ProjectInfo",
-    props: [
-        'title',
-        'description',
-        'screenshot',
-        'links'
-    ]
-};
-</script>
