@@ -22,6 +22,9 @@
                 <li>
                     <NavLink path="/projects" name="Projects" />
                 </li>
+                <li>
+                    <NavLink path="/my-work" name="My Work" />
+                </li>
             </ul>
         </div>
     </div>
