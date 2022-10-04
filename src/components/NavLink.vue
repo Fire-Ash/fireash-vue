@@ -3,10 +3,10 @@
 </script>
 
 <template>
-    <router-link :to="this.path"
+    <router-link :to="props.path"
                  class="btn w-full"
-                 :class="{ 'btn-primary' : this.$route.path === this.path }"
+                 :class="{ 'btn-primary' : $route.path === props.path }"
     >
-        {{ this.name }}
+        {{ props.name }}
     </router-link>
 </template>

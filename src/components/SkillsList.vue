@@ -8,10 +8,10 @@
 
 <template>
     <div>
-        <button @click="show = !show">{{ this.name }} (click)</button>
+        <button @click="show = !show">{{ props.name }} (click)</button>
         <div v-if="show" class="pl-10">
             <ul>
-                <li v-for="item in items">{{ item }}</li>
+                <li v-for="item in props.items">{{ item }}</li>
             </ul>
         </div>
     </div>
