@@ -1,9 +1,9 @@
 <script setup>
-    import { ref } from 'vue'
-    
-    const props = defineProps(['name', 'items'])
-    
-    const show = ref(false)
+import { ref } from 'vue'
+
+const props = defineProps(['name', 'items'])
+
+const show = ref(false)
 </script>
 
 <template>

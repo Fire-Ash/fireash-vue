@@ -1,5 +1,5 @@
 <script setup>
-    import SkillsList from '@/components/SkillsList.vue'
+import SkillsList from '@/components/SkillsList.vue'
 </script>
 
 <template>

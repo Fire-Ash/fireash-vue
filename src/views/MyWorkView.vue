@@ -1,14 +1,14 @@
 <script setup>
-    import ProjectInfo from '@/components/ProjectInfo.vue'
+import ProjectInfo from '@/components/ProjectInfo.vue'
 
-    const work = [
-        {
-            title: 'RulerOfTheSand\'s website',
-            description: 'This is a website I created for RulerOfTheSand so that people could easily see prices for their work and commission them.',
-            screenshot: '/images/work/RulerOfTheSand-Website.png',
-            links: [{ name: 'Website', link: 'https://rulersofthesand.com', icon: 'fa-solid fa-file' }]
-        }
-    ]
+const work = [
+    {
+        title: 'RulerOfTheSand\'s website',
+        description: 'This is a website I created for RulerOfTheSand so that people could easily see prices for their work and commission them.',
+        screenshot: '/images/work/RulerOfTheSand-Website.png',
+        links: [{ name: 'Website', link: 'https://rulersofthesand.com', icon: 'fa-solid fa-file' }]
+    }
+]
 </script>
 
 <template>

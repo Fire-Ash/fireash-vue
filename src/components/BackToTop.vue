@@ -1,21 +1,21 @@
 <script setup>
-    import { onMounted } from 'vue'
+import { onMounted } from 'vue'
 
-    onMounted(() => {
-        window.addEventListener('scroll', handleScroll)
-    })
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+})
 
-    function handleScroll() {
-        if (document.documentElement.scrollTop > 20) {
-            document.getElementById('topBtn').style.display = 'block'
-        } else {
-            document.getElementById('topBtn').style.display = 'none'
-        }
+function handleScroll() {
+    if (document.documentElement.scrollTop > 20) {
+        document.getElementById('topBtn').style.display = 'block'
+    } else {
+        document.getElementById('topBtn').style.display = 'none'
     }
+}
 
-    function toTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
+function toTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 
 <template>
