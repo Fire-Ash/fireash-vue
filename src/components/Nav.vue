@@ -4,7 +4,7 @@ import NavLink from '@/components/NavLink.vue'
 
 <template>
     <div class="md:sticky md:top-20 space-y-2">
-        <h1 class="text-4xl font-semibold">Hi, I'm Ash.</h1>
+        <h1 class="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Hi, I'm Ash.</h1>
         <h2 class="text-lg">Full stack web developer with experience in Laravel and others</h2>
         <div class="flex space-x-5">
             <a href="https://github.com/Fire-Ash"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -31,10 +31,6 @@ import NavLink from '@/components/NavLink.vue'
 </template>
 
 <style scoped>
-.nav-link {
-    @apply btn w-full;
-}
-
 @media (min-width: 768px) {
     .nav {
         height: 80vh;
