@@ -11,7 +11,7 @@
         </div>
         <div class="col-span-2">
            <RouterView v-slot="{ Component }">
-               <transition name="fade">
+               <transition mode="out-in">
                    <component :is="Component" />
                </transition>
            </RouterView>
@@ -21,14 +21,13 @@
 </template>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.2s ease;
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.15s ease;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.v-enter-from,
+.v-leave-to {
     opacity: 0;
-    position: fixed;
 }
 </style>
