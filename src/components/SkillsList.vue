@@ -10,7 +10,8 @@ const show = ref(false)
     <div>
         <button @click="show = !show">
             {{ props.name }}
-            <p v-show="!show" class="fa-solid fa-angle-down"></p>
+            <span v-show="!show"><i class="fa-solid fa-angle-down"></i></span>
+            <span v-show="show"><i class="fa-solid fa-angle-up"></i></span>
         </button>
         <div v-if="show" class="pl-10">
             <ul>
