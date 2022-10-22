@@ -1,7 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import Nav from '@/components/Nav.vue'
-import BackToTop from '@/components/BackToTop.vue'
+import Nav from './components/Nav.vue'
+import BackToTop from './components/BackToTop.vue'
 </script>
 
 <template>
@@ -10,11 +10,11 @@ import BackToTop from '@/components/BackToTop.vue'
             <Nav />
         </div>
         <div class="col-span-2">
-           <RouterView v-slot="{ Component }">
-               <transition mode="out-in">
-                   <component :is="Component" />
-               </transition>
-           </RouterView>
+            <RouterView v-slot="{ Component }">
+                <transition mode="out-in">
+                    <component :is="Component" />
+                </transition>
+            </RouterView>
         </div>
         <BackToTop />
     </div>
