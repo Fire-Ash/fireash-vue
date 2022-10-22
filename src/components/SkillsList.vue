@@ -8,7 +8,10 @@ const show = ref(false)
 
 <template>
     <div>
-        <button @click="show = !show">{{ props.name }} (click)</button>
+        <button @click="show = !show">
+            {{ props.name }} <i v-show="!show" class="fa-solid fa-angle-down"></i>
+            <i v-show="show" class="fa-solid fa-angle-up"></i>
+        </button>
         <div v-if="show" class="pl-10">
             <ul>
                 <li v-for="item in props.items">{{ item }}</li>
