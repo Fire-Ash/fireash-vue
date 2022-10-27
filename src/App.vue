@@ -186,18 +186,23 @@ const navItems = [
             class="z-10 max-w-2xl p-5"
             :class="{ 'mb-14': $route.path != '/' }"
         >
-            <RouterView />
+            <RouterView v-slot="{ Component }">
+                <transition>
+                    <component :is="Component" />
+                </transition>
+            </RouterView>
         </div>
 
         <Footer />
 
         <video
+            v-if="$route.path == '/'"
             muted
             loop
             autoplay
             preload="none"
             class="absolute -z-50 w-auto min-w-full min-h-full max-w-none"
-            style="filter: brightness(50%)"
+            style="filter: brightness('50%')"
         >
             <source src="/videos/background.mp4" type="video/mp4" />
         </video>
