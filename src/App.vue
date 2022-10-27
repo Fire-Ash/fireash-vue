@@ -181,7 +181,10 @@ const navItems = [
             overflow-hidden
         "
     >
-        <div class="z-10 max-w-2xl p-5 mb-14">
+        <div
+            class="z-10 max-w-2xl p-5"
+            :class="{ 'mb-14': $route.path != '/' }"
+        >
             <RouterView />
         </div>
 
