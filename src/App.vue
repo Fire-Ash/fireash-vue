@@ -134,6 +134,7 @@ const navItems = [
 
     <div
         v-if="showMobileNav"
+        @click="showMobileNav = false"
         class="fixed h-screen w-screen bg-black bg-opacity-50 pt-20 pl-5 z-40"
     >
         <RouterLink
