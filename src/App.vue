@@ -42,7 +42,7 @@ const navItems = [
         "
     >
         <div
-            class="border-l hover:border-none grid content-center ml-5 gap-10"
+            class="border-l hover:border-none grid content-center ml-5 gap-6"
             style="pointer-events: none"
         >
             <RouterLink
@@ -63,7 +63,7 @@ const navItems = [
             </RouterLink>
         </div>
         <div
-            class="border-r hover:border-none grid content-center mr-5 gap-4"
+            class="border-r hover:border-none grid content-center mr-5 gap-6"
             style="pointer-events: none"
         >
             <a
