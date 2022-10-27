@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import Footer from './components/Footer.vue'
 
 const showMobileNav = ref(false)
 
@@ -180,9 +181,11 @@ const navItems = [
             overflow-hidden
         "
     >
-        <div class="z-10 max-w-2xl p-5">
+        <div class="z-10 max-w-2xl p-5 mb-14">
             <RouterView />
         </div>
+
+        <Footer />
 
         <video
             muted
