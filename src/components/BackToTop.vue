@@ -19,10 +19,11 @@ function toTop() {
 </script>
 
 <template>
-    <button class="fixed bottom-5 right-5 btn btn-square rounded-full"
-            style="display:none;"
-            @click="toTop"
-            id="topBtn"
+    <button
+        class="fixed bottom-5 right-5 btn btn-square rounded-full"
+        style="display: none"
+        @click="toTop"
+        id="topBtn"
     >
         <i class="fa-solid fa-angle-up fa-xl"></i>
     </button>

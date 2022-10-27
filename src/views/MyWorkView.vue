@@ -7,7 +7,13 @@ const work = [
         description:
             'This is a website I created for RulerOfTheSand so that people could easily see prices for their work and commission them.',
         screenshot: '/images/work/RulerOfTheSand-Website.png',
-        links: [{ name: 'Website', link: 'https://rulersofthesand.com', icon: 'fa-solid fa-file' }]
+        links: [
+            {
+                name: 'Website',
+                link: 'https://rulersofthesand.com',
+                icon: 'fa-solid fa-file'
+            }
+        ]
     }
 ]
 </script>
@@ -16,7 +22,8 @@ const work = [
     <div class="space-y-10">
         <p>
             I am willing to create websites for people who want me to.<br />
-            Contact me by any of the methods on my about page (email preferred) to discuss details, payment, etc.
+            Contact me by any of the methods on my about page (email preferred)
+            to discuss details, payment, etc.
         </p>
 
         <ProjectInfo

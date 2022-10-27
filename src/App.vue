@@ -1,36 +1,198 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import Nav from './components/Nav.vue'
-import BackToTop from './components/BackToTop.vue'
+import { ref } from 'vue'
+
+const showMobileNav = ref(false)
+
+const navItems = [
+    {
+        link: '/',
+        name: 'Home',
+        type: 0
+    },
+    {
+        link: '/about',
+        name: 'About',
+        type: 0
+    },
+    {
+        link: '/projects',
+        name: 'Projects',
+        type: 0
+    },
+    {
+        link: '/my-work',
+        name: 'My Work',
+        type: 0
+    }
+]
 </script>
 
 <template>
-    <div v-if="$route.path != '/'" class="md:grid grid-cols-3 gap-20 w-10/12 max-w-6xl mx-auto mt-20 space-y-10 mb-10">
-        <div class="col-span-1">
-            <Nav />
+    <nav
+        class="
+            hidden
+            fixed
+            z-10
+            md:flex
+            justify-between
+            content-center
+            w-full
+            h-full
+        "
+    >
+        <div
+            class="border-l hover:border-none grid content-center ml-5 gap-10"
+            style="pointer-events: none"
+        >
+            <RouterLink
+                v-for="(item, index) in navItems"
+                :to="item.link"
+                class="
+                    block
+                    hover:border-l
+                    p-5
+                    hover:border-fuchsia-500
+                    text-white
+                    nav-link
+                "
+                style="pointer-events: auto"
+            >
+                <span>{{ index + 1 }}.</span>
+                <span class="nav-label mx-2">{{ item.name }}</span>
+            </RouterLink>
         </div>
-        <div class="col-span-2">
-            <RouterView v-slot="{ Component }">
-                <transition mode="out-in">
-                    <component :is="Component" />
-                </transition>
-            </RouterView>
+        <div
+            class="border-r hover:border-none grid content-center mr-5 gap-4"
+            style="pointer-events: none"
+        >
+            <a
+                href="https://github.com/Fire-Ash"
+                target="_blank"
+                class="
+                    block
+                    hover:border-r
+                    p-5
+                    hover:border-fuchsia-500
+                    text-white
+                    nav-link
+                    text-right
+                "
+                style="pointer-events: auto"
+            >
+                <span class="nav-label mx-2">GitHub</span>
+                <span>5.</span>
+            </a>
+            <a
+                href="https://twitter.com/fire_ash_"
+                target="_blank"
+                class="
+                    block
+                    hover:border-r
+                    p-5
+                    hover:border-fuchsia-500
+                    text-white
+                    nav-link
+                    text-right
+                "
+                style="pointer-events: auto"
+            >
+                <span class="nav-label mx-2">Twitter</span>
+                <span>6.</span>
+            </a>
+            <a
+                href="https://blog.fireash.xyz"
+                target="_blank"
+                class="
+                    block
+                    hover:border-r
+                    p-5
+                    hover:border-fuchsia-500
+                    text-white
+                    nav-link
+                    text-right
+                "
+                style="pointer-events: auto"
+            >
+                <span class="nav-label mx-2">Blog</span>
+                <span>7.</span>
+            </a>
         </div>
-        <BackToTop />
+    </nav>
+
+    <button
+        @click="showMobileNav = !showMobileNav"
+        class="md:hidden fixed top-10 left-10 text-white z-50"
+    >
+        <div v-show="!showMobileNav">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div v-show="showMobileNav">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+        </div>
+    </button>
+
+    <div
+        v-if="showMobileNav"
+        class="fixed h-screen w-screen bg-black bg-opacity-50 pt-20 pl-5 z-40"
+    >
+        <RouterLink
+            v-for="(item, index) in navItems"
+            :to="item.link"
+            class="block hover:border-l p-5 hover:border-fuchsia-500 text-white"
+            style="pointer-events: auto"
+        >
+            <span>{{ index + 1 }}.</span>
+            <span class="mx-2">{{ item.name }}</span>
+        </RouterLink>
+        <a
+            href="https://github.com/Fire-Ash"
+            class="block hover:border-l p-5 hover:border-fuchsia-500 text-white"
+            style="pointer-events: auto"
+        >
+            <span>5.</span>
+            <span class="mx-2">GitHub</span>
+        </a>
+        <a
+            href="https://twitter.com/fire_ash_"
+            class="block hover:border-l p-5 hover:border-fuchsia-500 text-white"
+            style="pointer-events: auto"
+        >
+            <span>6.</span>
+            <span class="mx-2">Twitter</span>
+        </a>
+        <a
+            href="https://blog.fireash.yxz"
+            class="block hover:border-l p-5 hover:border-fuchsia-500 text-white"
+            style="pointer-events: auto"
+        >
+            <span>7.</span>
+            <span class="mx-2">Blog</span>
+        </a>
     </div>
-    <div v-else>
-        <RouterView />
-    </div>
+
+    <main
+        class="
+            relative
+            flex
+            items-center
+            justify-center
+            min-h-screen
+            overflow-hidden
+        "
+    >
+        <div class="z-10 max-w-2xl p-5">
+            <RouterView />
+        </div>
+
+        <video
+            muted
+            loop
+            autoplay
+            preload="none"
+            class="absolute -z-50 w-auto min-w-full min-h-full max-w-none"
+            style="filter: brightness(50%)"
+        >
+            <source src="/videos/background.mp4" type="video/mp4" />
+        </video>
+    </main>
 </template>
-
-<style>
-.v-enter-active,
-.v-leave-active {
-    transition: opacity 0.15s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-    opacity: 0;
-}
-</style>
