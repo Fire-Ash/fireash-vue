@@ -1,5 +1,5 @@
 <template>
-    <footer class="fixed flex justify-between bottom-0 bg-black/75 w-full p-5">
+    <footer class="fixed flex justify-between bottom-0 bg-black/75 w-full p-5 z-[60]">
         <span class="text-sm">Website by Ash, 2022.</span>
         <span class="space-x-4">
             <a href="https://github.com/Fire-Ash">
