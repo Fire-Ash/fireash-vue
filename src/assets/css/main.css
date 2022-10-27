@@ -5,3 +5,11 @@
 * {
     font-family: 'JetBrains Mono', monospace;
 }
+
+.nav-link .nav-label {
+    visibility: hidden;
+}
+
+.nav-link:hover .nav-label {
+    visibility: visible;
+}
