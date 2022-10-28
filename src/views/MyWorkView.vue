@@ -22,8 +22,7 @@ const work = [
     <div class="space-y-10">
         <p>
             I am willing to create websites for people who want me to.<br />
-            Contact me by any of the methods on my about page (email preferred)
-            to discuss details, payment, etc.
+            Contact me by any of the methods on my about page (email preferred) to discuss details, payment, etc.
         </p>
 
         <ProjectInfo
