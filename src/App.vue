@@ -202,7 +202,18 @@ const navItems = [
             autoplay
             preload="none"
             class="absolute -z-50 w-auto min-w-full min-h-full max-w-none"
-            style="filter: brightness('50%')"
+            style="filter: brightness(70%)"
+        >
+            <source src="/videos/background.mp4" type="video/mp4" />
+        </video>
+        <video
+            v-else
+            muted
+            loop
+            autoplay
+            preload="none"
+            class="absolute -z-50 w-auto min-w-full min-h-full max-w-none"
+            style="filter: brightness(30%)"
         >
             <source src="/videos/background.mp4" type="video/mp4" />
         </video>
