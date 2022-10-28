@@ -163,7 +163,7 @@ const navItems = [
             <span class="mx-2">Twitter</span>
         </a>
         <a
-            href="https://blog.fireash.yxz"
+            href="https://blog.fireash.xyz"
             class="block hover:border-l p-5 hover:border-fuchsia-500 text-white"
             style="pointer-events: auto"
         >
