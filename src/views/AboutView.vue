@@ -21,19 +21,23 @@ const contact = [
     <div>
         <div class="space-y-3">
             <p>
-                Hello, I'm Ash. Sometimes, I go by FireAsh or aetheryex online.
+                Hello, I'm Ash. Sometimes, I go by FireAsh, aetheryex, and other
+                names online.
             </p>
             <p>
-                I'm a somewhat beginner web developer, who's most experienced in
-                Laravel. I'm working on expanding my skills to things such as
-                Vue and Nuxt.
+                I'm a web developer, mainly doing frontend with Vue and backend
+                with Laravel. I want to expand my skillset by learning Express
+                for backend development and also learning React for frontend.
             </p>
             <p>
-                I love to try to learn new things, whether that is a new
-                framework, or even a new programming language. I'm currently
-                attempting to learn a bit more JavaScript, along with frameworks
-                for it, such as Vue and Nuxt. I'm also planning on possibly
-                looking into learning React and Next.js in the future.
+                When working on the frontend for websites I make, I usually use
+                Vue, or Blade if I'm working with Laravel. I also almost always
+                use TailwindCSS so that I don't have to write all of my own css,
+                while still having a good looking and different style.
+            </p>
+            <p>
+                For backend development, I mainly work with Laravel, though I do
+                want to also learn something like Express.
             </p>
         </div>
         <ul class="mt-14">
