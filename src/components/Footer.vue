@@ -8,6 +8,9 @@
             <a href="https://twitter.com/fire_ash_">
                 <i class="fa-brands fa-twitter fa-xl"></i>
             </a>
+            <a href="https://discord.gg/gYnMDyED2T">
+                <i class="fa-brands fa-discord fa-xl"></i>
+            </a>
         </span>
     </footer>
 </template>
