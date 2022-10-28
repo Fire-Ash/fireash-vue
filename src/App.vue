@@ -18,27 +18,40 @@ import SmallNav from './components/SmallNav.vue'
 
         <Footer />
 
-        <video
-            v-if="$route.path == '/'"
-            muted
-            loop
-            autoplay
-            preload="none"
-            class="absolute -z-50 w-auto min-w-full min-h-full max-w-none"
-            style="filter: brightness(70%)"
-        >
-            <source src="/videos/background.mp4" type="video/mp4" />
-        </video>
-        <video
-            v-else
-            muted
-            loop
-            autoplay
-            preload="none"
-            class="absolute -z-50 w-auto min-w-full min-h-full max-w-none"
-            style="filter: brightness(30%)"
-        >
-            <source src="/videos/background.mp4" type="video/mp4" />
-        </video>
+        <Transition>
+            <video
+                v-if="$route.path == '/'"
+                muted
+                loop
+                autoplay
+                preload="none"
+                class="absolute -z-50 w-auto min-w-full min-h-full max-w-none"
+                style="filter: brightness(70%)"
+            >
+                <source src="/videos/background.mp4" type="video/mp4" />
+            </video>
+            <video
+                v-else
+                muted
+                loop
+                autoplay
+                preload="none"
+                class="absolute -z-50 w-auto min-w-full min-h-full max-w-none"
+                style="opacity: 0.01"
+            >
+                <source src="/videos/background.mp4" type="video/mp4" />
+            </video>
+        </Transition>
     </main>
 </template>
+
+<style>
+.v-enter-active,
+.v-leave-active {
+    transition: all 0.5s ease;
+}
+
+.v-leave-to {
+    opacity: 0;
+}
+</style>
