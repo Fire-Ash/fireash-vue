@@ -187,9 +187,7 @@ const navItems = [
             :class="{ 'mb-14': $route.path != '/' }"
         >
             <RouterView v-slot="{ Component }">
-                <transition>
-                    <component :is="Component" />
-                </transition>
+                <component :is="Component" />
             </RouterView>
         </div>
 
