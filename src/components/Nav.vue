@@ -1,58 +1,38 @@
 <script setup>
-import NavLink from './NavLink.vue'
+import { computed } from 'vue'
+import { items } from '../nav.js'
+
+const externalItemStart = computed(() => {
+    return items.filter((obj) => obj.type === 0).length
+})
 </script>
 
 <template>
-    <div class="md:sticky md:top-20 space-y-2">
-        <h1
-            class="
-                text-4xl
-                font-semibold
-                text-transparent
-                bg-clip-text bg-gradient-to-r
-                from-secondary
-                to-accent
-            "
-        >
-            Hi, I'm Ash.
-        </h1>
-        <h2 class="text-lg">
-            Full stack web developer with experience in Laravel and others
-        </h2>
-        <div class="flex space-x-5">
-            <a href="https://github.com/Fire-Ash"
-                ><i class="fa-brands fa-github"></i> GitHub</a
-            >
-            <a href="https://twitter.com/fire_ash_"
-                ><i class="fa-brands fa-twitter"></i> Twitter</a
-            >
-            <a href="https://blog.fireash.xyz"
-                ><i class="fa-solid fa-folder"></i> Blog</a
-            >
+    <nav class="hidden fixed z-10 md:flex justify-between content-center w-screen h-screen">
+        <div class="border-l hover:border-none grid content-center ml-5 gap-6" style="pointer-events: none">
+            <span v-for="(item, index) in items.slice(0, externalItemStart)">
+                <RouterLink
+                    v-if="item.type == 0"
+                    :to="item.link"
+                    class="block hover:border-l p-5 hover:border-fuchsia-500 text-white nav-link"
+                    style="pointer-events: auto"
+                >
+                    <span>{{ index + 1 }}.</span>
+                    <span class="nav-label mx-2">{{ item.name }}</span>
+                </RouterLink>
+            </span>
         </div>
-        <div>
-            <ul class="space-y-2">
-                <li>
-                    <NavLink path="/" name="Home" />
-                </li>
-                <li>
-                    <NavLink path="/about" name="About Me" />
-                </li>
-                <li>
-                    <NavLink path="/projects" name="Projects" />
-                </li>
-                <li>
-                    <NavLink path="/my-work" name="My Work" />
-                </li>
-            </ul>
+        <div class="border-r hover:border-none grid content-center mr-5 gap-6" style="pointer-events: none">
+            <a
+                v-for="(item, index) in items.slice(externalItemStart)"
+                :href="item.link"
+                target="_blank"
+                class="block hover:border-r p-5 hover:border-fuchsia-500 text-white nav-link text-right"
+                style="pointer-events: auto"
+            >
+                <span class="nav-label mx-2">{{ item.name }}</span>
+                <span>{{ index + externalItemStart + 1 }}.</span>
+            </a>
         </div>
-    </div>
+    </nav>
 </template>
-
-<style scoped>
-@media (min-width: 768px) {
-    .nav {
-        height: 80vh;
-    }
-}
-</style>
