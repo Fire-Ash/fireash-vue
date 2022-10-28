@@ -4,5 +4,6 @@
     "useTabs": false,
     "singleQuote": true,
     "endOfLine": "lf",
-    "semi": false
+    "semi": false,
+    "editorconfig": true
 }
