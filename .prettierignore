@@ -19,6 +19,8 @@ coverage
 
 public/*
 
+.github
+
 # Editor directories and files
 .vscode/*
 .idea
