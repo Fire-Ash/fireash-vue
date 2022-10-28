@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import Footer from './components/Footer.vue'
 import Nav from './components/Nav.vue'
 import SmallNav from './components/SmallNav.vue'
