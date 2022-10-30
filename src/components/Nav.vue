@@ -9,7 +9,8 @@ const externalItemStart = computed(() => {
 
 <template>
     <nav class="hidden fixed z-10 md:flex justify-between content-center w-screen h-screen">
-        <div class="border-l hover:border-none grid content-center ml-5 gap-6" style="pointer-events: none">
+        <div class="fixed h-screen border-x ml-5 opacity-25" style="width: calc(100vw - 1.25rem * 2)"></div>
+        <div class="z-[11] grid content-center ml-5 gap-6" style="pointer-events: none">
             <span v-for="(item, index) in items.slice(0, externalItemStart)">
                 <RouterLink
                     v-if="item.type == 0"
@@ -22,7 +23,7 @@ const externalItemStart = computed(() => {
                 </RouterLink>
             </span>
         </div>
-        <div class="border-r hover:border-none grid content-center mr-5 gap-6" style="pointer-events: none">
+        <div class="z-[11] grid content-center mr-5 gap-6" style="pointer-events: none">
             <a
                 v-for="(item, index) in items.slice(externalItemStart)"
                 :href="item.link"
