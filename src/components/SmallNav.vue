@@ -22,7 +22,7 @@ const showMobileNav = ref(false)
     >
         <span v-for="(item, index) in items">
             <RouterLink
-                v-if="type == 0"
+                v-if="item.type === 0"
                 :to="item.link"
                 class="block hover:border-l p-5 hover:border-fuchsia-500 text-white"
                 style="pointer-events: auto"
