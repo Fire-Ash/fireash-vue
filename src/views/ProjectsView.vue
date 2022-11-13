@@ -19,6 +19,24 @@ const projects = [
                 icon: 'fa-solid fa-file'
             }
         ]
+    },
+    {
+        title: 'InputSender',
+        description:
+            "a cool way to send keyboard inputs to your friend's pc. this was created because a friend wanted me to",
+        screenshot: '/images/projects/InputSender01.png',
+        links: [
+            {
+                name: 'Source Code',
+                link: 'https://github.com/Fire-Ash/InputSender',
+                icon: 'fa-brands fa-git-alt'
+            },
+            {
+                name: 'Frontend',
+                link: 'https://InputSender.fireash.xyz',
+                icon: 'fa-solid fa-file'
+            }
+        ]
     }
 ]
 </script>
