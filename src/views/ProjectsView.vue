@@ -10,14 +10,14 @@ const projects = [
         links: [
             {
                 name: 'Source Code',
-                link: 'https://github.com/Fire-Ash/lvforum',
+                link: 'https://github.com/midiidev/lvforum',
                 icon: 'fa-brands fa-git-alt'
             },
-            {
-                name: 'Demo Instance',
-                link: 'https://lvforum.fireash.xyz',
-                icon: 'fa-solid fa-file'
-            }
+            // {
+            //     name: 'Demo Instance',
+            //     link: 'https://lvforum.midiidev.xyz',
+            //     icon: 'fa-solid fa-file'
+            // }
         ]
     },
     {
@@ -28,12 +28,12 @@ const projects = [
         links: [
             {
                 name: 'Source Code',
-                link: 'https://github.com/Fire-Ash/InputSender',
+                link: 'https://github.com/midiidev/InputSender',
                 icon: 'fa-brands fa-git-alt'
             },
             {
                 name: 'Frontend',
-                link: 'https://InputSender.fireash.xyz',
+                link: 'https://InputSender.midiidev.xyz',
                 icon: 'fa-solid fa-file'
             }
         ]

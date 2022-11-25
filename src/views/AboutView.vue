@@ -7,12 +7,12 @@ const contact = [
     },
     {
         name: 'Discord',
-        info: 'ash <3#5553'
+        info: 'ashhh#4974'
     },
     {
         name: 'Email',
-        info: 'me@fireash.xyz',
-        link: 'mailto:me@fireash.xyz'
+        info: 'ash@midiidev.xyz',
+        link: 'mailto:ash@midiidev.xyz'
     }
 ]
 </script>
@@ -20,7 +20,7 @@ const contact = [
 <template>
     <div>
         <div class="space-y-3">
-            <p>Hello, I'm Ash. Sometimes, I go by FireAsh, aetheryex, and other names online.</p>
+            <p>Hello, I'm Ash or MidiiDev. Sometimes, I go by FireAsh, aetheryex, and other names online.</p>
             <p>
                 I'm a web developer, mainly doing frontend with Vue and backend with Laravel. I want to expand my
                 skillset by learning Express for backend development and also learning React for frontend.

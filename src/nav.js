@@ -20,7 +20,7 @@ export const items = [
         type: 0
     },
     {
-        link: 'https://github.com/Fire-Ash',
+        link: 'https://github.com/midiidev',
         name: 'GitHub',
         type: 1
     },
@@ -30,7 +30,7 @@ export const items = [
         type: 1
     },
     {
-        link: 'https://blog.fireash.xyz',
+        link: 'https://blog.midiidev.xyz',
         name: 'Blog',
         type: 1
     }
