@@ -8,10 +8,15 @@ const work = [
             'This is a website I created for RulerOfTheSand so that people could easily see prices for their work and commission them.',
         screenshot: '/images/work/RulerOfTheSand-Website.png',
         links: [
+            // {
+            //     name: 'Website',
+            //     link: 'https://rulersofthesand.com',
+            //     icon: 'fa-solid fa-file'
+            // }
             {
-                name: 'Website',
-                link: 'https://rulersofthesand.com',
-                icon: 'fa-solid fa-file'
+                name: 'currently down',
+                link: '', // remember to link to future blog post
+                icon: 'fa-solid fa-xmark'
             }
         ]
     }
